@@ -1,11 +1,8 @@
-@media screen and (max-width : 768px) {
-    galler{
-        flex-direction: column;
-        align-items: center;
-    }
-    .gallery img{
-        width: 90%;
-    }
+@media (max-width: 480px) {
+  body {
+    background-color: lightblue;
+    font-size: 14px;
+  }
 }
 
 
