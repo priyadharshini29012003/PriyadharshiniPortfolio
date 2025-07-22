@@ -5,7 +5,7 @@
   <title></title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="style.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body style="font-family: 'Courier New', Courier, monospace;">
@@ -58,14 +58,9 @@
       <div class="headings">
         <h3 class="greet-heading" style="color: black;font-family: 'Courier New', Courier, monospace;">Hello, I'm</h3>
         <h1 class="my-heading" style="font-family: 'Courier New', Courier, monospace;">Priyadharshini</h1>
-        <h3 class="sub-heading"
-          style="color: black; font-size: large; font-family: 'Courier New', Courier, monospace;;"><br>
-          passionate Software Developer </h3>
-<!-- <div class="card">
-
-<h2>CARD</h2>
-
-</div> -->
+       <h3 class="sub-heading" id="typing" 
+  style="color: black; font-size: large; font-family: 'Courier New', Courier, monospace;"><br>
+</h3>
           
       </div>
       <div class="intro-buttons">
@@ -80,50 +75,46 @@
 
   <section id="about" class="ab" style="height: 100vh;font-family: 'Courier New', Courier, monospace;">
     <div class="aboutme" style="color: whitesmoke;">
-      <h2 style="margin-left: 250px; color: chocolate;">About me</h2>
-      <p>I am a recent graduate passionate
-        about web development,programming,<br>
+      <h2 style=" color: chocolate;">About me</h2>
+      I am a recent graduate passionate
+        about web development,programming,
         and building useful projects.enjoy
-        learning new technologies and <br>
-        solving problems through code</p>
+        learning new technologies and 
+        solving problems through code
     </div>
   </section>
 
-  <div style="height: 100vh;">
-    <div id="skills" class="sk">
-      <section id="skills" class="sub">
-        <div class="lang">
-          <h3 style="color: chocolate;">Core java</h3>
-          <p style="color: whitesmoke;">Developed backend logic using Core Java, applying object-oriented programming
-            principles such as
-            inheritance, polymorphism, abstraction, and encapsulation</p><br><br><br>
-        </div>
-        <div class="lang">
-          <h3 style="color: chocolate;">Sql</h3>
-          <p style="color: whitesmoke;">Designed and managed relational databases using SQL. Performed CRUD operations
-            (Create, Read, Update,
-            Delete) to handle application data efficiently.</p><br><br>
-        </div>
-        <div class="lang">
-          <h3 style="color: chocolate;">Html</h3>
-          <p style="color: whitesmoke;">Created structured and semantic web pages using HTML5, focusing on clean code
-            and accessibility.
-            Designed responsive layouts by organizing content with elements</p>
-        </div>
-        <div class="lang">
-          <h3 style="color: chocolate;">Css</h3>
-          <p style="color: whitesmoke;">Styled web pages using CSS to create responsive user interfaces. Applied modern
-            layout techniques such as Flexbox and CSS Grid for clean.</p><br><br>
-        </div>
-        <div class="lang">
-          <h3 style="color: chocolate;">Javascript</h3>
-          <p style="color: whitesmoke;">Implemented dynamic and interactive web features using JavaScript.Developed
-            user-friendly interfaces
-            through DOM manipulation,event handling,and form validations.</p><br><br><br>
-        </div>
-      </section>
-    </div>
-  </div>
+
+<div class="slider" id="skills">
+  <div class="item">
+  <h2 class="lang">Core Java</h2>
+Developed backend logic using Core Java, applying object-oriented programming principles such as
+inheritance, polymorphism, abstraction, and encapsulation
+</div>
+<div class="item">
+  <h2 class="lang">Sql</h2>
+Designed and managed relational databases using SQL. Performed CRUD operations
+(Create, Read, Update,Delete) to handle application data efficiently.
+</div>
+<div class="item">
+  <h2 class="lang">Html</h2>
+Created structured and semantic web pages using HTML5, focusing on clean code
+ and accessibility.Designed responsive layouts by organizing content with elements
+</div>
+<div class="item">
+  <h2 class="lang">Css</h2>
+Styled web pages using CSS to create responsive user interfaces. Applied modern
+ layout techniques such as Flexbox and CSS Grid for clean.
+</div>
+<div class="item">
+  <h2 class="lang">JavaScript</h2>
+Implemented dynamic and interactive web features using JavaScript.Developed
+ user-friendly interfaces throughform validations.
+</div>
+
+</div>
+
+ 
   <section id="education" class="hero" style="height: 100vh;">
     <table>
       <thead style="color: chocolate;">
@@ -156,28 +147,26 @@
       </tbody>
     </table>
   </section>
-  <section class="services" id="services" style="height: 100vh;">
-    <div class="pro">
+ 
+    <div class="pro" id="services">
       <div class="myrow">
         <h3 style="color: chocolate;">wedding Management System</h3>
-        <p style="color: whitesmoke;">
-          It is a web applications to organized <br>
-          and managed all aspects of the wedding <br>
-          It helps organize tasks,timelines,and <br>
+          It is a web applications to organized
+          and managed all aspects of the wedding 
+          It helps organize tasks,timelines,and 
           responsibilities, reducing stress.
-        </p>
       </div>
       <div class="myrow">
         <h3 style="color: chocolate;">
           Porfolio website
         </h3>
 
-        <p style="color: whitesmoke;">This portfolio website built with <br>
-          Html, Css, and JavaScript to showcase <br>
-          my profile. designed and developed a <br>
-          responsible portfolio showcase my personal<br>
+    This portfolio website built with 
+          Html, Css, and JavaScript to showcase 
+          my profile. designed and developed a 
+          responsible portfolio showcase my personal
           project,technical skills and resume
-        </p>
+        
       </div>
 
 
@@ -186,33 +175,33 @@
         <h3 style="color: chocolate;">
           Library Management System
         </h3>
-        <p style="color: whitesmoke;">
-          The Library Management System is a console-based <br>
-          application developed using Core Java.<br>
-          It is designed to manage the operations<br>
-          of a library such as adding new books,<br>
-          displaying available books, searching <br>
-          books by ID, and handling the issue <br>
-          and return of books.
-        </p>
+     
+          The Library Management System is a console-based
+          application developed using Core Java.
+          It is designed to manage the operations
+          of a library such as
+          displaying available books, searching 
+         ID, and handling the issue
+         
+        
 
       </div>
       <div class="myrow">
         <h3 style="color: chocolate;">
           Bus Ticket Booking System
         </h3>
-        <p style="color: whitesmoke;">
-          The Bus Ticket Booking System<br>
-          is a simple console-based application<br>
-          developed using Core Java.<br>
-          It allows users to view available<br>
-          buses, book tickets,and display booking details.<br>
+       
+          The Bus Ticket Booking System
+          is a simple console-based application
+          developed using Core Java.
+          It allows users to view available
+          buses, book tickets,and display booking details.
 
         </p>
 
       </div>
     </div>
-  </section>>
+
   <div id="intern" style="height: 100vh;">
     <section id="internship">
       <div>
@@ -237,26 +226,30 @@
       <div class="contact-details">
         <h1 class="greet-heading" style="color:chocolate;"><b>My Contact Details</b></h1>
         <div class="details">
-          <h5 class="contact-heading">EMAIL : priyadharshinigopal01012003@gmail.com</h5>
-        </div>
+       <h5 class="contact-heading">  EMAIL :  <a href="priyadharshinigopal01012003@gmail.com" style="color: whitesmoke;">priyadharshinigopal01012003@gmail.com</a>
+       </h5></div>
         <div class="details">
           <h5 class="contact-heading">PHONE : +91 9361445721</h5>
-          <p class="contact-text"></p>
+         
         </div>
-
       </div>
     </div>
   </section>
+  <button id="backToTop" title="Go to top">↑</button>
 </div>
-  <footer style="background-color: dimgray; display: flex;flex-direction: row;" class="footer"><h3 style="margin-left: 500px;">Priyadharshini Portfolio </h3>
+  <footer style="background-color: dimgray; display: flex;flex-direction: row;column-gap: 10px;" class="footer"><h3 style="margin-left: 500px;">Priyadharshini Portfolio </h3>
     <a href="https://wa.me/919361445721" target="_blank" class="whatsapp-float">
   <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp">
 </a>
   <a href="https://www.linkedin.com/in/g-priya-dharshini-82342726a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="linkedin-float">
   <img src="https://img.icons8.com/color/48/000000/linkedin.png" alt="LinkedIn">
 </a>
+<a href="https://github.com/priyadharshini29012003" target="_blank" style="font-size: 30px; color: #000;" class="github-float">
+ <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" width="40" height="40">
+</a>
   </footer>
   <script src="script.js"></script>
+
 </body>
 
 </html>
