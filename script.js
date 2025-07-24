@@ -28,3 +28,24 @@ window.addEventListener("DOMContentLoaded", typeEffect);
       behavior: "smooth"
     });
   });
+  
+    const form = document.getElementById('contactForm');
+  const popup = document.getElementById('popup');
+
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    popup.style.display = 'flex';
+    form.reset();
+  });
+
+  function closePopup() {
+    popup.style.display = 'none';
+  }
+  form.addEventListener('submit', function(e) {
+  e.preventDefault();
+  popup.style.display = 'flex';
+  form.reset();
+  setTimeout(() => {
+    popup.style.display = 'none';
+  }, 3000); // auto close in 3 seconds
+});
