@@ -53,7 +53,7 @@
     </nav>
   </header>
 
-  <section id="home" class="hero" style="height: 100vh;">
+  <section id="home" class="hero">
     <div class="intro">
       <div class="headings">
         <h3 class="greet-heading" style="color: black;font-family: 'Courier New', Courier, monospace;">Hello, I'm</h3>
@@ -67,7 +67,7 @@
        <a href="https://wa.me/919361445721?text=Hi%20I%20am%20interested%20in%20hiring%20you" target="_blank">
   
  <button class="btn common-btn">Hire Me</button></a>
-       <a href="https://drive.google.com/file/d/1lgMfK1bOvOtrgpbqG7zAIbD-Y0RI5gd1/view?usp=drivesdk"><button class="btn ghost-btn" >Get Resume</button></a>
+       <a href="https://drive.google.com/file/d/1lgMfK1bOvOtrgpbqG7zAIbD-Y0RI5gd1/view "><button class="btn ghost-btn" >Get Resume</button></a>
       </div>
     </div>
   </section>
@@ -202,7 +202,7 @@ Implemented dynamic and interactive web features using JavaScript.Developed
       </div>
     </div>
 
-  <div id="intern" style="height: 100vh;">
+  <div id="intern" >
     <section id="internship">
       <div>
         <h3 style="color: chocolate;"> Software Developer Intern</h3>
@@ -222,19 +222,34 @@ Implemented dynamic and interactive web features using JavaScript.Developed
   </section>
   </div>
 
-  <section class="contact" id="contact" style="height: 80vh;">
-      <div class="contact-details">
-        <h1 class="greet-heading" style="color:chocolate;"><b>My Contact Details</b></h1>
-        <div class="details">
-       <h5 class="contact-heading">  EMAIL :  <a href="priyadharshinigopal01012003@gmail.com" style="color: whitesmoke;">priyadharshinigopal01012003@gmail.com</a>
-       </h5></div>
-        <div class="details">
-          <h5 class="contact-heading">PHONE : +91 9361445721</h5>
-         
-        </div>
-      </div>
+<section class="contact" id="contact" style="height: 100vh;">
+  <div class="contact-details">
+    <h1 class="greet-heading" style="color:chocolate;"><b>My Contact Details</b></h1>
+
+    <form id="contactForm" class="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn common-btn">Send Message</button>
+    </form>
+
+    <div class="details">
+      <h5 class="contact-heading">
+        EMAIL: <a href="mailto:priyadharshinigopal01012003@gmail.com" style="color: whitesmoke;">priyadharshinigopal01012003@gmail.com</a>
+      </h5>
+      <h5 class="contact-heading">PHONE: +91 9361445721</h5>
     </div>
-  </section>
+  </div>
+
+  <!-- POPUP -->
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <p>✅ Message Sent Successfully!</p>
+      <button onclick="closePopup()" class="btn common-btn">OK</button>
+    </div>
+  </div>
+</section>
+
   <button id="backToTop" title="Go to top">↑</button>
 </div>
   <footer style="background-color: dimgray; display: flex;flex-direction: row;column-gap: 10px;" class="footer"><h3 style="margin-left: 500px;">Priyadharshini Portfolio </h3>
