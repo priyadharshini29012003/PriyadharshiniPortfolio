@@ -49,3 +49,18 @@ window.addEventListener("DOMContentLoaded", typeEffect);
     popup.style.display = 'none';
   }, 3000); // auto close in 3 seconds
 });
+
+  document.querySelectorAll('.menu-list a').forEach(link => {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      const id = this.getAttribute('href').slice(1);
+      const section = document.getElementById(id);
+      if (section) {
+        const offset = section.offsetTop;
+        const sectionHeight = section.offsetHeight;
+        const windowHeight = window.innerHeight;
+        const scrollTo = offset - (windowHeight / 2) + (sectionHeight / 2);
+        window.scrollTo({ top: scrollTo, behavior: 'smooth' });
+      }
+    });
+  });
